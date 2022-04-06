@@ -1,5 +1,7 @@
 git clone https://github.com/michaelparkerr/logan.git
 
+sudo apt-get update
+
 IP=$(curl ifconfig.me)
 sed -i "s|<yourip>|$IP|g" ~/logan/runnode.sh
 
